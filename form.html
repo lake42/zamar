@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RS Continuum - Performance Quote Page</title>
+<style type="text/css">
+/*
+*{
+    margin:auto;
+    padding:auto;
+}
+body,select {
+    font-family:verdana,sans-serif;
+    font-size:10px;
+}
+
+.head{font-family:georgia,serif;font-size:16px;text-align:center;}
+.headtext{font-size:1.3em;}
+*/
+
+#quotepage{
+    font-family:georgia, serif;
+    font-size:1em;
+    
+}
+	legend{
+	font-weight:bold;
+	text-transform:capitalize;
+	}
+	
+	label{
+	display:inline-block;
+	width:230px;
+	text-align:right;
+	text-transform:capitalize;
+        vertical-align:top;
+	}
+        .notes{
+            font-size:.7em;
+        }
+        
+	fieldset{
+	/*width:650px;*/
+        width:96%;
+        
+	}
+	
+	ol{
+	
+	}
+	
+	li{
+	list-style:none;
+        margin: 14px 0 0 7px;
+	}
+        
+        input[type="text"]{
+            width:290px;
+        }
+
+        textarea{
+            width:300px;
+            height:100px;
+            
+        }
+        
+       #box 
+	{
+	  position: relative;
+	  width: 60%;
+	  background: #ddd;
+	  -moz-border-radius: 4px;
+	  border-radius: 4px;
+	  padding: 2em 1.5em;
+	  color: rgba(0,0,0, .8);
+	  text-shadow: 0 1px 0 #fff;
+	  line-height: 1.5;
+	  margin: 60px auto;
+	}
+
+
+	#box:before, #box:after 
+	{
+	  z-index: -1; 
+	  position: absolute; 
+	  content: "";
+	  bottom: 15px;
+	  left: 10px;
+	  width: 50%; 
+	  top: 80%;
+	  max-width:300px;
+	  background: rgba(0, 0, 0, 0.7); 
+	  -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);   
+	  -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	  -webkit-transform: rotate(-3deg);    
+	  -moz-transform: rotate(-3deg);   
+	  -o-transform: rotate(-3deg);
+	  -ms-transform: rotate(-3deg);
+	  transform: rotate(-3deg);
+	}
+
+	#box:after 
+	{
+	  -webkit-transform: rotate(3deg);
+	  -moz-transform: rotate(3deg);
+	  -o-transform: rotate(3deg);
+	  -ms-transform: rotate(3deg);
+	  transform: rotate(3deg);
+	  right: 10px;
+	  left: auto;
+	}	
+
+
+</style>
+</head>
+<body>
+    <a href="index.html">Back Home</a>
+        <form action="http://www.zamarentertainment.com/cgi-bin/FormMail.pl" method="POST" name="quotepage" id="quotepage">
+<input type="hidden" name="redirect" value="http://www.zamarentertainment.com/thanku.html">
+<input type="hidden" name="recipient" value="rscontinuum@zamarentertainment.com">
+<input type="hidden" name="subject" value="rscontinuum quote page">
+<input name="rscontinuum_quotepage" type="hidden" value="">
+<!--
+<table width="600" cellpadding="3" cellspacing="0" border="0">
+<tr><td class="head"><br /><h2>Get a quote page -Russell Sledge</h2><br></td></tr>
+</table>
+-->
+<div id="box">
+<fieldset>
+    <legend>Get A Performance Quote Today - Russell Sledge</legend>
+    <ol>
+        <li>
+            <label>First Name:</label>
+            <input id="fname" type="text" />
+        </li>
+        <li>
+            <label>Last Name:</label>
+            <input id="lname" type="text" />
+        </li>
+        <li>
+            <label>Phone Number:</label>
+            <input id="phone" type="text" />
+        </li>
+        <li>
+            <label>Event Date:</label>
+            <input id="dtate" type="text" />
+        </li>
+        <li>
+            <label>Venue Name:</label>
+            <input id="venue" type="text" />
+        </li>
+        <li>
+            <label>Street Address:</label>
+            <input id="address" type="text" />
+        </li>
+        <li>
+            <label>Address (cont.):</label>
+            <input id="address2" type="text" />
+        </li>
+        <li>
+            <label>City:</label>
+            <input id="city" type="text" />
+        </li>
+        <li>
+            <label>State:</label>
+            <select name="State">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AS">AS</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="DC">DC</option>
+                <option value="FM">FM</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="GU">GU</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="lA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MH">MH</option>
+                <option value="MD" selected>MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="MP">MP</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PW">PW</option>
+                <option value="PA">PA</option>
+                <option value="PR">PR</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VI">VI</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WY</option>
+            </select>
+        </li>
+        <li>
+            <label>Zip Code:</label>
+            <input id="zip" type="text" />
+        </li>
+        <li>
+            <label>Email:</label>
+            <input id="email" type="text" />
+        </li>
+        <li>
+            <label>Start Time:</label>
+            <input id="starttime" type="text" />
+        </li>
+        <li>
+            <label>End Time:</label>
+            <input id="endtime" type="text" />
+        </li>
+        <li>
+            <label>Type Of Event:<br/><span class="notes">(Wedding, Office Party, Festival, etc.)</span></label>
+            <input id="eventtype" type="text" />
+        </li>
+        <li>
+            <label>Size of Group needed:<br/><span class="notes">(Duo, Trio, Quartet, Quintet)</span>:</label>
+            <input id="groupneed" type="text" />
+        </li>
+        <li>
+            <label>Approx. Number of Guests:</label>
+            <input id="guests" type="text" />
+        </li>
+        <li>
+            <label>Other Notes/Comments:</label>
+            <textarea></textarea>
+        </li>
+        <li>
+            <label></label>
+            <input type="submit"/>&nbsp;<input type="reset"/>
+    </ol>    
+    
+</fieldset>
+</div>
+<!--
+<td>Type Of Event (Wedding, Office Party, Festival, etc.)</td>
+<td><input name="TypeOfEvent(Wedding,OfficeParty,Festival,etc.)"></td>
+</tr>
+<tr>
+<td>Size of Group (Duo, Trio, Quartet, Quintet)</td>
+<td><input name="SizeofGroup(Duo,Trio,Quartet,Quintet)"></td>
+</tr>
+<tr>
+<td>Approx. Number of Guests</td>
+<td><input name="Approx.NumberofGuests"></td>
+</tr>
+<tr>
+<td>Other Notes</td>
+<td><input name="OtherNotes"></td>
+</tr>
+
+
+<table width="600" cellpadding="3" cellspacing="0" border="0">
+<tr>
+<td>First Name</td>
+<td><input type="text" name="FirstName"></td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td>
+<input type="text" name="LastName"></td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td><input name="Phone Number" type="text"></td>
+</tr>
+<tr>
+<td>Event Date</td>
+<td><input name="EventDate" type="text"></td>
+</tr>
+<tr>
+<td>Venue Name</td>
+<td><input name="VenueName" type="text"></td>
+</tr>
+<tr>
+<td>Street Address</td>
+<td><input name="StreetAddress" type="text"></td>
+</tr>
+<tr>
+<td>Address (cont.)</td>
+<td><input name="Address2" type="text"></td>
+</tr>
+<tr>
+<td>City</td>
+<td><input type="text" name="City">  
+</tr>
+<tr>
+<td>State</td>
+<td>
+<select name="State">
+<option value="AL">AL</option>
+<option value="AK">AK</option>
+<option value="AS">AS</option>
+<option value="AZ">AZ</option>
+<option value="AR">AR</option>
+<option value="CA">CA</option>
+<option value="CO">CO</option>
+<option value="CT">CT</option>
+<option value="DE">DE</option>
+<option value="DC">DC</option>
+<option value="FM">FM</option>
+<option value="FL">FL</option>
+<option value="GA">GA</option>
+<option value="GU">GU</option>
+<option value="HI">HI</option>
+<option value="ID">ID</option>
+<option value="IL">IL</option>
+<option value="IN">IN</option>
+<option value="IA">IA</option>
+<option value="KS">KS</option>
+<option value="KY">KY</option>
+<option value="lA">LA</option>
+<option value="ME">ME</option>
+<option value="MH">MH</option>
+<option value="MD" selected>MD</option>
+<option value="MA">MA</option>
+<option value="MI">MI</option>
+<option value="MN">MN</option>
+<option value="MS">MS</option>
+<option value="MO">MO</option>
+<option value="MT">MT</option>
+<option value="NE">NE</option>
+<option value="NV">NV</option>
+<option value="NH">NH</option>
+<option value="NJ">NJ</option>
+<option value="NM">NM</option>
+<option value="NY">NY</option>
+<option value="NC">NC</option>
+<option value="ND">ND</option>
+<option value="MP">MP</option>
+<option value="OH">OH</option>
+<option value="OK">OK</option>
+<option value="OR">OR</option>
+<option value="PW">PW</option>
+<option value="PA">PA</option>
+<option value="PR">PR</option>
+<option value="RI">RI</option>
+<option value="SC">SC</option>
+<option value="SD">SD</option>
+<option value="TN">TN</option>
+<option value="TX">TX</option>
+<option value="UT">UT</option>
+<option value="VT">VT</option>
+<option value="VI">VI</option>
+<option value="VA">VA</option>
+<option value="WA">WA</option>
+<option value="WV">WV</option>
+<option value="WI">WI</option>
+<option value="WY">WY</option>
+</select>
+</td>  
+</tr>
+<tr>
+<td>Zip Code</td>
+<td><input type="text" name="ZipCode">  
+</tr>
+<tr>
+<td>E-mail</td>
+<td><input name="Email"></td>
+</tr>
+<tr>
+<td>Start Time</td>
+<td><input name="StartTime" type="text"></td>
+</tr>
+<tr>
+<td>End Time</td>
+<td><input name="EndTime" type="text"></td>
+</tr>
+<tr>
+<td>Type Of Event (Wedding, Office Party, Festival, etc.)</td>
+<td><input name="TypeOfEvent(Wedding,OfficeParty,Festival,etc.)"></td>
+</tr>
+<tr>
+<td>Size of Group (Duo, Trio, Quartet, Quintet)</td>
+<td><input name="SizeofGroup(Duo,Trio,Quartet,Quintet)"></td>
+</tr>
+<tr>
+<td>Approx. Number of Guests</td>
+<td><input name="Approx.NumberofGuests"></td>
+</tr>
+<tr>
+<td>Other Notes</td>
+<td><input name="OtherNotes"></td>
+</tr>
+</table>
+
+<table width="600" cellpadding="3" cellspacing="0" border="0">
+<tr>
+<td><input type="submit" Value="Submit Info"><input type="reset" value="Clear Form"</td>
+<td></td>
+</tr>
+-->
+</form>
+
+
+</body>
+</html>

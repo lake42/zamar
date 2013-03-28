@@ -1,0 +1,39 @@
+#!/usr/local/bin/perl
+
+require "zamar.lib";
+
+open(DATA,"gig.xml");
+@msglines = <DATA>;
+close(DATA);
+
+$flag = 0;
+
+#varible set for the zamar lib
+$title = "Russell Sledge's $br Performance Schedule";
+$titlehead = "Russell Sledge's Performance Schedule";
+$phrase = "This is Russell Sledge's up-to-date performance schedule.";
+$item = "dates";
+
+print "Content-type: text/html\n\n";
+&htmlhead($titlehead);
+&buildnav($item);
+&pictandinfo($title,$phrase);
+&starttable;
+#this parses the xml file, excluding non-needed elements
+	for ($i=0; $i<@msglines; $i++) {
+		if ($msglines[$i] =~ /<nodecreation>(.*)<\/nodecreation>/) {$nodedate[$i] = $1; $flag=1}
+		elsif ($msglines[$i] =~ /<date>(.*)<\/date>/) {$date[$i] = $1; print $rule.$nn.$date[$i].$br.$nn}
+		elsif  ($msglines[$i] =~ /<\?xml version=\"1.0\"\?>/) {$xmlheader[$i] = $1; $flag=1;}
+		elsif  ($msglines[$i] =~ /<bashgigs>/){$bashgigs[$i] = $1;}
+		elsif  ($msglines[$i] =~ /<!--addnode-->/){$addnod[$i] = $1;$flag=1}
+		elsif  ($msglines[$i] =~ /<gig>/){$gignode[$i] = $1; $flag=1}
+		elsif  ($msglines[$i] =~ /<\/gig>/){$gignode[$i] = $1;}
+		elsif  ($msglines[$i] =~ /<\/bashgigs>/){$gignode[$i] = $1;}
+		elsif ($msglines[$i] =~ /<details><\!\[CDATA\[(.*)/ ) {$details[$i] = $1; print $details[$i].$br.$nn}
+		elsif ($msglines[$i] =~ /<details>(.*)<\/details>/ ) {$details[$i] = $1; print $details[$i].$br.$br.$nn}
+		elsif  ($msglines[$i] =~ /\]\]><\/details>/){$lasttag[$i] = $1;print $br.$nn}
+		elsif (($msglines[$i] =~ /(.*)\n/) && ($flag eq 1 )){$details[$i] = $1; print $details[$i].$br.$nn}
+	}
+&endtable;
+&buildnav($item);
+&footer;

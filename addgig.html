@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+			<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+			<script type="text/javascript" src="functions.js"></script>
+			 <link href="russell.css" rel="stylesheet" type="text/css" />
+		</head>
+	<body>
+
+<table cellpadding="5" cellspacing="0" border="0" width="600">
+	<form method="POST" name="newgig" id="newgig">
+		<input type="hidden" name="id" value="2">
+		<tr><td align="right">Date of Gig:</td><td><input type="text" name="gigdate" id="gigdate" class="text" value="" /></td></tr>
+		<tr><td align="right" valign="top">Details of Gig:</td><td><textarea name="gigdetails" id="gigdetails" cols="60" rows="7" value=""></textarea></td></tr>
+<!--
+		<tr><td align="right">Number of gigs to list:</td>
+			<td>
+				<select name="listnum">
+					<option value="1">Entire list</option>
+					<option value="2">Latest 5 gigs</option>
+					<option value="3">Latest 10 gigs</option>
+				</select>
+			</td>
+		</tr>
+-->
+		<tr><td></td><td><input type="button" value="add gig" name="submit" id="submit" />&nbsp;&nbsp;&nbsp;<input type="reset"></td></tr>
+	</form>
+</table>
+<br/>
+	<ul id="gig_list">
+	
+	
+	</ul>
+
+	</body>
+</html>
+
+
+
+
+

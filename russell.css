@@ -1,0 +1,205 @@
+*{
+	margin: 15px auto 0 auto;
+	padding: 0;
+}
+
+body#zamar{
+
+}
+
+#zamar .container{
+	width:700px;	
+}
+
+ol#gigadd{
+	width:700px;
+	text-align:center;
+}
+
+ul#gig_list{
+padding:0;
+}
+
+#gig_list li{
+padding:10px 0 25px 0;
+}
+
+#gig_list li:not(:last-child){
+background: transparent url('images/dots_03.png') bottom center no-repeat;
+}
+
+
+
+#nav, #nav b
+{
+    font-family:georgia, serif;
+    font-size:1.1em;
+
+    border-top:1px solid #ccc; 
+    border-bottom:1px solid #ccc;
+    padding:3px;
+    width:600px;
+    /*
+    top:3px;
+    left:0px;
+    position:relative;
+    */
+}
+
+table#gigform{
+	border-spacing:5px;
+}
+
+#nav a{
+    font-family:georgia, serif;
+    font-size:1.1em;
+}
+
+#front, .footer{
+    font-family:georgia, serif;
+    font-size:1.1em;
+}
+
+.bio p{
+        font-family:georgia, serif;
+    font-size:1.1em;
+    line-height:1.6em;
+
+    
+}
+
+.rule
+{border-top:1px solid #ccc;width:600px;margin:6px 0 6px 0;}
+
+ .date, .date p{
+    width:575px;
+    font-family:georgia,serif;
+    font-size:1.1em;
+    line-height:1.4em;
+}
+
+.date{
+        margin-top:6px;
+}
+
+.date p{
+        margin-top:7px;
+}
+
+.image1 
+	{
+  	padding: 5px 5px 5px 5px;
+  	border: 1px solid #ccc;
+  	border-top-color: #eee;
+  	border-right-color: #ddd;
+  	border-bottom-color: #bbb;
+  	background-color: #fff;
+  	text-align: center;
+	}
+
+
+a 
+{text-decoration:none;color:blue}
+
+#nav a:hover
+{
+    
+    text-decoration:none;
+    
+    border-bottom:3px solid blue;
+    border-top:3px solid blue;
+    /*
+    background-color:#cecf9c;
+    */
+}
+
+a:hover
+{
+    text-decoration:underline;
+}
+
+h1
+{
+    font-family:georgia, serif;
+    font-size:1.9em;
+}
+
+h2
+{
+    font-family:georgia, serif;
+    font-size:1.4em;
+
+}
+p
+{
+    text-align:justify;
+}
+
+.samples, .samples a, .samples p{
+    font-family:georgia, serif;
+}
+
+.samples h1, .samples p{
+    text-align:center;
+}
+
+td,p,body
+{
+font-family:arial, sans-serif;
+font-size:12px;
+}
+
+#nav,
+textarea,
+input
+{font-family:verdana, sans-serif;font-size:11px}
+
+input.text
+{width:230px}
+
+.subhead 
+{font-family:verdana, sans-serif;font-size:24px}
+
+.small 
+{font-family:arial, sans-serif;font-size:10px}
+
+#bod
+{width:500px}
+
+ul {
+list-style:none;
+}
+
+.gigform{
+	
+}
+
+fieldset{
+	border:none;
+}
+
+legend{
+	font-weight:bold;
+	text-transform:capitalize;
+	}
+	
+		label{
+	display:inline-block;
+	width:230px;
+	text-align:right;
+	text-transform:capitalize;
+        vertical-align:top;
+	}
+
+        input[type="text"]{
+            width:290px;
+        }
+
+        textarea{
+            width:300px;
+            height:100px;
+            
+        }
+        
+
+

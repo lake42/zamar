@@ -1,0 +1,140 @@
+$br = "<br>";
+$sp = "\&nbsp;\&nbsp;\&nbsp;";
+$rule = "<div class=\"rule\"><\/div>\n";
+$wrap1 = "<div class=\"date\">\n";
+$wrap2 = "<\/div>\n";
+$nn = "\n";
+$p = "<p>";
+$s1= "<strong>";
+$s2="<\/strong>";
+
+%nav = (
+"Home" => "../index.html",
+"Bio" => "../bio.html",
+"Discography" => "../disc.html",
+"Dates" => "tourdates.pl",
+#"Dates2" => "tourdates2.pl",
+"Samples" => "../samples.html",
+"Get a quote" => "../form.html",
+"As You Wish" => "../ayw.html",
+"zamar\@zamarentertainment.com" => "mailto:zamar\@zamarentertainment.com"
+);
+
+%mode = (
+"1" => "Home",
+"2" => "Bio",
+"3" => "Discography",
+"4" => "Dates",
+#"5" => "Dates2",
+"5" => "Samples",
+"6" => "Get A Quote",
+"7" => "As You Wish",
+"8" => "rscontinuum\@zamarentertainment.com",
+);
+
+sub buildnav{
+ 	print "<div id=\"nav\">";
+	$navmax = 7;
+	my($item) = $_[0];
+	for ($i=1; $i<=$navmax; $i++) {
+		if ($item eq $mode{$i}) {print $sp."<b>".$item."</b>\n"}
+		else{print $sp."<a href='".$nav{$mode{$i}}."'>".$mode{$i}."</a>\n"}
+	}
+	print "</div><br>\n";
+}
+
+sub htmlhead{
+my($title) = $_[0];
+print <<"HTML code";
+<html>
+<head>
+	<title>$title</title>
+	<link rel="stylesheet" type="text/css" href="../russell.css">
+</head>
+
+ <body>
+<table cellpadding="0" cellspacing="0" width="600" border="0">
+	<tr>
+		<td valign="top" align="left"><img src="../russell.jpg" class="image1" border="0" alt="A PICTURE OF RUSSELL SLEDGE."></td>
+	</tr>
+</table>
+HTML code
+}
+
+sub nav{
+print <<"HTML code";
+ 	<div id="nav">
+	&nbsp;&nbsp;&nbsp;<a href="../index.html">Home</a>
+	&nbsp;&nbsp;&nbsp;<a href="../bio.html"><b>Bio</b></a>
+	&nbsp;&nbsp;&nbsp;<a href="../disc.html">Discography</a>
+	&nbsp;&nbsp;&nbsp;<a href="../tourdates.html">Dates</a>
+	&nbsp;&nbsp;&nbsp;<a href="../samples.html">Samples</a>
+	</div>
+<br>
+HTML code
+}
+
+sub pictandinfo{
+my($title) = $_[0];
+my($phrase) = $_[1];
+print <<"HTML code";
+HTML code
+}
+
+sub starttable{
+print <<"HTML code";
+<table cellpadding="4" cellspacing="0" border="0" width="600">
+<tr><td>
+HTML code
+}
+
+sub endtable{
+print <<"HTML code";
+</td></tr></table>
+HTML code
+}
+
+sub gigform{
+print <<"HTML code";
+<table cellpadding="5" cellspacing="0" border="0" width="600">
+	<form method=POST action="addgig.pl" name="gigform">
+		<input type="hidden" name="id" value="2">
+		<tr><td align="right">Date of Gig:</td><td><input type="text" name="gigdate" class="text"></td></tr>
+		<tr><td align="right" valign="top">Details of Gig:</td><td><textarea name="gigdetails" cols="60" rows="7"></textarea></td></tr>
+		<tr><td align="right">Number of gigs to list:</td>
+			<td>
+				<select name="listnum">
+					<option value="1">Entire list</option>
+					<option value="2">Latest 5 gigs</option>
+					<option value="3">Latest 10 gigs</option>
+				</select>
+			</td>
+		</tr>
+		<tr><td></td><td><input type="submit">&nbsp;&nbsp;&nbsp;<input type="reset"></td></tr>
+	</form>
+</table>
+HTML code
+}
+
+sub nodeadded{
+print <<"HTML code";
+<table cellpadding="5" cellspacing="0" border="0" width="600">
+	<tr><td>You successfully added this gig:</td></tr>
+	<tr><td>$formdata{'gigdate'}</td></tr>
+	<tr><td>$formdata{'gigdetails'}</td></tr>
+	<tr><td>Added : $date</td></tr>
+	<tr><td><br><a href="addgig.pl?id=1">Add Another gig</a></td></tr>
+	<tr><td><br><a href="tourdates.pl">View the Gig Page</a></td></tr>
+</table>
+HTML code
+}
+
+
+sub footer{
+print <<"HTML code";
+</body>
+</html>
+HTML code
+}
+
+1;
