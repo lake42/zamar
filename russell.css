@@ -11,6 +11,11 @@ body#zamar{
 	width:700px;	
 }
 
+#zamar li{
+
+	list-style:none;
+	}
+
 ol#gigadd{
 	width:700px;
 	text-align:center;
@@ -20,24 +25,22 @@ ul#gig_list{
 padding:0;
 }
 
-#gig_list li{
+#gig_list li, #gig_list2 li{
 padding:10px 0 25px 0;
 }
 
-#gig_list li:not(:last-child){
+#gig_list li:not(:last-child), #gig_list2 li:not(:last-child) {
 background: transparent url('images/dots_03.png') bottom center no-repeat;
 }
 
-
-
 #nav, #nav b
 {
-    font-family:georgia, serif;
+    font-family:arial, sans-serif;
     font-size:1.1em;
 
     border-top:1px solid #ccc; 
     border-bottom:1px solid #ccc;
-    padding:3px;
+    padding:6px;
     width:600px;
     /*
     top:3px;
@@ -51,7 +54,7 @@ table#gigform{
 }
 
 #nav a{
-    font-family:georgia, serif;
+    font-family:arial, sans-serif;
     font-size:1.1em;
 }
 
@@ -60,12 +63,10 @@ table#gigform{
     font-size:1.1em;
 }
 
-.bio p{
-        font-family:georgia, serif;
-    font-size:1.1em;
-    line-height:1.6em;
-
-    
+#bio p{
+    font-family:georgia, serif;
+    font-size:16px;
+    line-height:20px;    
 }
 
 .rule
@@ -151,8 +152,16 @@ font-size:12px;
 
 #nav,
 textarea,
-input
-{font-family:verdana, sans-serif;font-size:11px}
+input,
+
+{
+font-family:verdana, sans-serif;
+font-size:11px;
+}
+
+#nav a{
+text-align:center;
+}
 
 input.text
 {width:230px}
@@ -201,5 +210,21 @@ legend{
             
         }
         
+#samples{
+	width:800px;
+}
 
+.callout p, .callout h1{
+	text-align:center;
+}
 
+img{
+padding:5px;
+    -webkit-box-shadow: 0 1px 1px 0 #aaaaaa;
+    -khtml-box-shadow: 0 1px 1px 0 #aaaaaa;
+    -moz-box-shadow: 0 1px 1px 0 #aaaaaa;
+    -ms-box-shadow: 0 1px 1px 0 #aaaaaa;
+    -o-box-shadow: 0 1px 1px 0 #aaaaaa;
+    box-shadow: 0 1px 1px 0 #aaaaaa;
+
+}

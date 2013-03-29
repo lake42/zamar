@@ -1,6 +1,6 @@
 <?php
-$file = 'gig.xml';
-$bakfile = 'gig.xml~';
+$file = 'gig2.xml';
+$bakfile = 'gig2.xml~';
 if (!copy($file, $bakfile)){
 	echo "failed to make back up file";
 }
@@ -9,7 +9,7 @@ if (!copy($file, $bakfile)){
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Gig List Management</title>
+		<title>Gig List Management - Russell Sledge Continuum</title>
 
 		<link href="russell.css" rel="stylesheet" type="text/css" />
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -63,7 +63,7 @@ if (!copy($file, $bakfile)){
 						<textarea name="gigdetails" id="gigdetails" cols="60" rows="7" value=""></textarea>
 					</li>
 					<li><label></label>
-						<input type="button" value="add gig" name="submit" id="submit" />
+						<input type="button" value="add gig" name="submit" id="submit2" />
 					</li>
 				</ul>
 			</fieldset>
@@ -82,7 +82,7 @@ if (!copy($file, $bakfile)){
 			</form>
 		</table>
 		-->
-		<ul id="gig_list">
+		<ul id="gig_list2">
 		</ul>
 		</div>
 	</body>

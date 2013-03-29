@@ -95,7 +95,15 @@ if (!function_exists('file_put_contents')) {
     } 
 } 
 
-$dom = domxml_open_mem(file_get_contents('gig.xml'));
+if ($_GET['id']=== '1') {
+	$xmlfileX = 'gig.xml';
+	}
+if ($_GET['id']=== '2') {
+	$xmlfileX = 'gig2.xml';
+	}
+	
+
+$dom = domxml_open_mem(file_get_contents($xmlfileX));
 $dt = htmlspecialchars($_POST['gigdetails']);
 //$nodeCR = htmlspecialchars($_POST(''));
 $dateCR = $_POST['gigdate'];
@@ -117,7 +125,7 @@ $detailsCR = $_POST['gigdetails'];
   $root = $dom->document_element();
   $root->append_child($gig);
 
-  file_put_contents('gig.xml', $dom->dump_mem());
+  file_put_contents($xmlfileX, $dom->dump_mem());
 //  $dom->dump_file("gig3.xml", false, true);
 //  echo "gig node added";
 //  echo print_r($_POST);
