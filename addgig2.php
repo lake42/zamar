@@ -29,10 +29,10 @@ if (!copy($file, $bakfile)){
 			</tr>
 		</table>
 		<div id="nav">
-			&nbsp;&nbsp;&nbsp;<a href='../index.html'>Home</a>
+			&nbsp;&nbsp;&nbsp;<a href='index.html'>Home</a>
 			&nbsp;&nbsp;&nbsp;<a href='../bio.html'>Bio</a>
 			&nbsp;&nbsp;&nbsp;<a href='../disc.html'>Discography</a>
-			&nbsp;&nbsp;&nbsp;<a href='cgi-bin/tourdates.pl'>Dates</a>
+			&nbsp;&nbsp;&nbsp;<a href='tourdates.html'>Dates</a>
 			&nbsp;&nbsp;&nbsp;<a href='../samples.html'>Samples</a>
 			&nbsp;&nbsp;&nbsp;<a href=''>Get A Quote</a>
 			&nbsp;&nbsp;&nbsp;<a href='../ayw.html'>As You Wish</a>
